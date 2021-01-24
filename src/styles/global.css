@@ -1,0 +1,7 @@
+@font-face {
+  src: url("static/fonts/iosevka-sparkle-regular.woff") format("woff");
+}
+
+body {
+  font-family: Iosevka Sparkle, Helvetica Neue, sans-serif;
+}
