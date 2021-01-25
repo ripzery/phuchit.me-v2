@@ -1,0 +1,8 @@
+.skill {
+  line-height: 2rem;
+  display: flex;
+}
+
+.skill-icon {
+  margin-right: 2rem;
+}

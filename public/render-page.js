@@ -38255,6 +38255,7 @@ function Activity(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "activity-left"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_1__["FaStar"], {
+    size: "2rem",
     className: "activity-icon"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "activity-right"
@@ -38266,6 +38267,39 @@ function Activity(_ref) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Activity);
+
+/***/ }),
+
+/***/ "./src/components/Skill.js":
+/*!*********************************!*\
+  !*** ./src/components/Skill.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
+/* harmony import */ var _styles_skill_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/skill.css */ "./src/styles/skill.css");
+/* harmony import */ var _styles_skill_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_skill_css__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+function Skill(_ref) {
+  var children = _ref.children;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "skill"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "skill-icon"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_1__["FaChevronRight"], {
+    size: "1rem"
+  })), children);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Skill);
 
 /***/ }),
 
@@ -38348,6 +38382,17 @@ var NotFoundPage = function NotFoundPage() {
 
 /***/ }),
 
+/***/ "./src/styles/skill.css":
+/*!******************************!*\
+  !*** ./src/styles/skill.css ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/templates/index.js":
 /*!********************************!*\
   !*** ./src/templates/index.js ***!
@@ -38362,7 +38407,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/global.css */ "./src/styles/global.css");
 /* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_global_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Activity__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Activity */ "./src/components/Activity.js");
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
+/* harmony import */ var _components_Skill__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Skill */ "./src/components/Skill.js");
 
 
 
@@ -38372,7 +38417,7 @@ var IndexPage = function IndexPage(_ref) {
   var activities = _ref.pageContext.activities;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "Phuchit Sirimongkolsathien (Euro)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("blockquote", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("i", null, "I am a self-taught software developer with passion for full-stack web development and distributed systems. My goal is to deliver reliable and maintainable software while working collaboratively with multidisciplinar teams. I also like to mentor people technically to help them thrive in those same aspects.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "My Interests"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_icons_fa__WEBPACK_IMPORTED_MODULE_3__["FaChevronRight"], null), " Fullstack Web Development"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_icons_fa__WEBPACK_IMPORTED_MODULE_3__["FaChevronRight"], null), " Mobile Development"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_icons_fa__WEBPACK_IMPORTED_MODULE_3__["FaChevronRight"], null), " Ethereum Smart Contract Development"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "My latest activity on GitHub"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, activities.map(function (activity, i) {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "Phuchit Sirimongkolsathien (Euro)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("blockquote", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("i", null, "I am a self-taught software developer with passion for full-stack web development and distributed systems. My goal is to deliver reliable and maintainable software while working collaboratively with multidisciplinar teams. I also like to mentor people technically to help them thrive in those same aspects."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "My Interests"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_Skill__WEBPACK_IMPORTED_MODULE_3__["default"], null, "Fullstack Web Development"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_Skill__WEBPACK_IMPORTED_MODULE_3__["default"], null, "Mobile Development"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_Skill__WEBPACK_IMPORTED_MODULE_3__["default"], null, "Ethereum Smart Contract Development"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "My latest activity on GitHub"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, activities.map(function (activity, i) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_Activity__WEBPACK_IMPORTED_MODULE_2__["default"], {
       activity: activity,
       key: activity.id

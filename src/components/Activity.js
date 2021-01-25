@@ -6,7 +6,7 @@ function Activity({ activity }) {
   return (
     <div className='activity-container' id={activity.id}>
       <div className='activity-left'>
-        <FaStar className='activity-icon' />
+        <FaStar size='2rem' className='activity-icon' />
       </div>
       <div className='activity-right'>
         <p className='activity-time'>{activity.created_at}</p>
