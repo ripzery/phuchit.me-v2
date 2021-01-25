@@ -2,15 +2,16 @@ import * as React from "react"
 import "../styles/global.css"
 import Activity from "../components/Activity"
 import Skill from '../components/Skill'
+import { skills, name, introduction } from '../../public/static/self.json'
 
 const IndexPage = ({ pageContext: { activities }}) => {
   return (
     <div className='container'>
       <section>
-        <h1>Phuchit Sirimongkolsathien (Euro)</h1>
+        <h1>{name}</h1>
         <blockquote>
           <i>
-            I am a self-taught software developer with passion for full-stack web development and distributed systems. My goal is to deliver reliable and maintainable software while working collaboratively with multidisciplinar teams. I also like to mentor people technically to help them thrive in those same aspects.
+            {introduction}
           </i>
         </blockquote>
       </section>
@@ -19,9 +20,7 @@ const IndexPage = ({ pageContext: { activities }}) => {
           My Interests
         </h1>
         <ul>
-          <Skill>Fullstack Web Development</Skill>
-          <Skill>Mobile Development</Skill>
-          <Skill>Ethereum Smart Contract Development</Skill>
+          {skills.map((skill, i) => <Skill key={i}>{skill}</Skill>)}
         </ul>
       </section>
       <section>

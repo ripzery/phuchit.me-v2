@@ -17,6 +17,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "gatsby": "^2.26.1",
+    "gatsby-source-filesystem": "^2.10.0",
     "moment": "^2.29.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
