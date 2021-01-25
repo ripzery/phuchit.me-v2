@@ -1,4 +1,5 @@
 .activity-container {
+  height: 100%;
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
@@ -6,6 +7,16 @@
 
 .activity-left {
   display: flex;
+  flex-direction: column;
+}
+
+.activity-left::after {
+  content: "";
+  background: var(--blue3);
+  width: 2px;
+  margin-left: 6px;
+  margin-top: 1rem;
+  flex-basis: 100%;
 }
 
 .activity-right {

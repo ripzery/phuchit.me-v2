@@ -22,6 +22,11 @@ blockquote {
   margin: 0rem;
 }
 
+ul {
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
 li {
   margin: 1rem 0;
 }
@@ -110,4 +115,8 @@ blockquote {
 blockquote > i {
   color: var(--blue2);
   line-height: 1.6;
+}
+
+section {
+  padding: 0rem 0rem 1rem 0rem;
 }

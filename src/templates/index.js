@@ -1,6 +1,7 @@
 import * as React from "react"
 import "../styles/global.css"
 import Activity from "../components/Activity"
+import { FaChevronRight } from 'react-icons/fa'
 
 const IndexPage = ({ pageContext: { activities }}) => {
   return (
@@ -17,13 +18,13 @@ const IndexPage = ({ pageContext: { activities }}) => {
         </h1>
         <ul>
           <li>
-            Fullstack Web Development
+            <FaChevronRight /> Fullstack Web Development
           </li>
           <li>
-            Mobile Development
+            <FaChevronRight /> Mobile Development
           </li>
           <li>
-            Ethereum Smart Contract Development
+            <FaChevronRight /> Ethereum Smart Contract Development
           </li>
         </ul>
       </section>
@@ -32,7 +33,7 @@ const IndexPage = ({ pageContext: { activities }}) => {
           My latest activity on GitHub
         </h1>
         <ul>
-          {activities.map((activity, i) => <Activity activity={activity} />)}
+          {activities.map((activity, i) => <Activity activity={activity} key={activity.id}/>)}
         </ul>
       </section>
     </div>

@@ -1,0 +1,5 @@
+
+    const cmd = require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/gatsby/dist/commands/develop-process.js");
+    const args = {"_":["develop"],"verbose":false,"no-color":false,"no-colors":false,"noColors":false,"noColor":false,"json":false,"H":"localhost","host":"localhost","p":"8000","port":50355,"c":"","cert-file":"","certFile":"","k":"","key-file":"","keyFile":"","ca-file":"","caFile":"","graphql-tracing":false,"graphqlTracing":false,"$0":"gatsby","directory":"/Users/rpzr/workspace/personal/phuchit.me-v2","browserslist":[">0.25%","not dead"],"sitePackageJson":{"name":"phuchit.me-v2","version":"1.0.0","private":true,"description":"phuchit.me-v2","author":"euro","keywords":["gatsby"],"scripts":{"develop":"gatsby develop","start":"gatsby develop","build":"gatsby build","serve":"gatsby serve","clean":"gatsby clean"},"dependencies":{"axios":"^0.21.1","gatsby":"^2.26.1","moment":"^2.29.1","react":"^16.13.1","react-dom":"^16.13.1","react-icons":"^4.1.0"}},"report":{"errorMap":{}},"useYarn":false,"proxyPort":8000,"ssl":null,"debugInfo":null};
+    cmd(args);
+  
