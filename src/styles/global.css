@@ -1,7 +1,113 @@
 @font-face {
-  src: url("static/fonts/iosevka-sparkle-regular.woff") format("woff");
+  font-family: "Iosevka";
+  src: url("iosevka-sparkle-regular.woff") format("woff");
+}
+
+:root {
+  --blue1: #424bb0;
+  --blue2: #636bc5;
+  --blue3: #8a90d3;
+  --blue4: #d8daf0;
+}
+
+h1,
+h2,
+h3,
+li {
+  color: var(--blue1);
+}
+
+ul,
+blockquote {
+  margin: 0rem;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.fas {
+  width: 24px;
+  height: 24px;
+  font-size: 1rem;
 }
 
 body {
-  font-family: Iosevka Sparkle, Helvetica Neue, sans-serif;
+  width: 100%;
+  height: 100%;
+  font-family: "Iosevka";
+  overflow: hidden scroll;
+  background-color: var(--blue4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+  }
+
+  blockquote {
+    border-left: 2px solid;
+    padding-left: 1rem;
+    margin-left: 1.5rem;
+  }
+
+  blockquote > i {
+    line-height: 1.6;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    width: 960px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+  }
+
+  blockquote {
+    padding: 1rem 1rem;
+  }
+
+  blockquote > i {
+    line-height: 1.6;
+  }
+}
+
+blockquote {
+  border-left: 2px solid;
+  border-color: var(--blue2);
+}
+
+blockquote > i {
+  color: var(--blue2);
+  line-height: 1.6;
 }
