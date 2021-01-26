@@ -1,20 +1,15 @@
+@import "./constants.css";
+
 @font-face {
   font-family: "Iosevka";
   src: url("iosevka-sparkle-regular.woff") format("woff");
-}
-
-:root {
-  --blue1: #424bb0;
-  --blue2: #636bc5;
-  --blue3: #8a90d3;
-  --blue4: #d8daf0;
 }
 
 h1,
 h2,
 h3,
 li {
-  color: var(--blue1);
+  color: var(--color-text-primary);
 }
 
 ul,
@@ -47,7 +42,7 @@ body {
   height: 100%;
   font-family: "Iosevka";
   overflow: hidden scroll;
-  background-color: var(--blue4);
+  background-color: var(--color-background);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,12 +70,15 @@ body {
 
   blockquote {
     border-left: 2px solid;
-    padding-left: 1rem;
-    margin-left: 1.5rem;
+    padding: 0rem 1rem;
+    margin-left: 2.5rem;
+    border-left: 2px solid;
+    border-color: var(--color-text-disabled);
   }
 
   blockquote > i {
     line-height: 1.6;
+    color: var(--color-text-tertiary);
   }
 }
 
@@ -97,24 +95,6 @@ body {
     align-items: flex-start;
     padding: 1rem 2rem;
   }
-
-  blockquote {
-    padding: 1rem 1rem;
-  }
-
-  blockquote > i {
-    line-height: 1.6;
-  }
-}
-
-blockquote {
-  border-left: 2px solid;
-  border-color: var(--blue2);
-}
-
-blockquote > i {
-  color: var(--blue2);
-  line-height: 1.6;
 }
 
 section {

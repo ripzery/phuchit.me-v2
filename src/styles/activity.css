@@ -1,3 +1,5 @@
+@import "./constants.css";
+
 .activity-container {
   height: 100%;
   display: flex;
@@ -13,7 +15,7 @@
 
 .activity-left::after {
   content: "";
-  background: var(--blue3);
+  background: var(--color-border);
   width: 2px;
   margin-top: 1rem;
   flex-basis: 100%;
@@ -28,18 +30,18 @@
 
 .activity-icon {
   margin-top: 0.5rem;
-  color: var(--blue2);
+  color: var(--color-text-accent);
 }
 
 .activity-time {
   margin: 0;
-  background-color: var(--blue3);
+  background-color: var(--color-text-accent);
   width: fit-content;
   border-radius: 0.25rem;
-  color: var(--blue1);
+  color: var(--color-text-button);
   padding: 8px;
 }
 
 .activity-event {
-  color: var(--blue2);
+  color: var(--color-text-secondary);
 }

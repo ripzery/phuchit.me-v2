@@ -1,0 +1,13 @@
+:root {
+  /* Migrate colors from phuchit.me */
+  --color-text-primary: #f0f4f8;
+  --color-text-secondary: #d9e2ec;
+  --color-text-tertiary: #d2dce6;
+  --color-text-disabled: #8494a4;
+  --color-text-accent: #bef8fd;
+  --color-background: #263238;
+  --color-border: #9fb3c8;
+  --color-codeblock: #272822;
+  --color-button: #3b464b;
+  --color-solid: #000;
+}
