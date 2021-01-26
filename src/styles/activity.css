@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
+  padding-right: 2rem;
 }
 
 .activity-left {
@@ -26,6 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-bottom: 2rem;
 }
 
 .activity-icon {
@@ -44,4 +46,32 @@
 
 .activity-event {
   color: var(--color-text-secondary);
+}
+
+.activity-payload {
+}
+
+.activity-payload-header {
+  margin: 0 0 0.5rem;
+  color: var(--color-text-tertiary);
+}
+
+.activity-payload-commits {
+  margin: 0px;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+  align-items: center;
+  display: flex;
+  background-color: var(--color-button);
+}
+
+.activity-payload-commits-item {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-tertiary);
+}
+
+.activity-payload-commits-item-icon {
+  display: inline;
+  margin-right: 1rem;
 }
