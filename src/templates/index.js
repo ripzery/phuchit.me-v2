@@ -2,6 +2,7 @@ import * as React from "react"
 import "../styles/global.css"
 import Activity from "../components/Activity"
 import Skill from '../components/Skill'
+import Footer from "../components/Footer"
 import { skills, name, introduction } from '../../public/static/self.json'
 
 const IndexPage = ({ pageContext: { activities }}) => {
@@ -31,6 +32,7 @@ const IndexPage = ({ pageContext: { activities }}) => {
           {activities.map((activity, i) => <Activity activity={activity} key={activity.id}/>)}
         </ul>
       </section>
+      <Footer />
     </div>
   )
 }

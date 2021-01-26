@@ -1,0 +1,20 @@
+@import "constants.css";
+
+.footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  margin-top: 2rem;
+  color: var(--color-text-primary);
+  font-size: 0.8rem;
+}
+
+.footer a {
+  color: var(--color-text-accent);
+}
+
+.footer p {
+  margin: 0 0 1rem 0;
+}
