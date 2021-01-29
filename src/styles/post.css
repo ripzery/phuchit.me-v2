@@ -74,6 +74,10 @@
     line-height: 1.6;
   }
 
+  .post-content > * ol {
+    margin: 0;
+  }
+
   .post-content > * a {
     color: var(--color-text-accent);
   }
