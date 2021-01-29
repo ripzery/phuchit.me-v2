@@ -1,10 +1,14 @@
 :root {
   /* Migrate colors from phuchit.me */
-  --color-text-primary: #f0f4f8;
-  --color-text-secondary: #d9e2ec;
-  --color-text-tertiary: #d2dce6;
+  --color-text-primary: #dadfe1;
+  --color-text-secondary: #a2ded0;
+  --color-text-tertiary: #6ad4b1;
+  --color-text-blockquote: #bbd4d4;
   --color-text-disabled: #8494a4;
-  --color-text-accent: #bef8fd;
+  --color-text-accent: #c8f7c5;
+  --color-text-post: #d3d3d3;
+  --color-text-header1: #c8f7c5;
+  --color-text-header2: #a2ded0;
   --color-background: #263238;
   --color-border: #9fb3c8;
   --color-codeblock: #272822;

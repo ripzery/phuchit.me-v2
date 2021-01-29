@@ -29,7 +29,7 @@ const IndexPage = ({ pageContext: { activities }}) => {
           My latest activity on GitHub
         </h1>
         <ul>
-          {activities.map((activity, i) => <Activity activity={activity} key={activity.id}/>)}
+          {activities.map((activity) => <Activity activity={activity} key={activity.id}/>)}
         </ul>
       </section>
       <Footer />

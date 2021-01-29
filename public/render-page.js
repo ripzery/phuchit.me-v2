@@ -111,7 +111,8 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
-  "component---src-templates-index-js": hot(preferDefault(__webpack_require__(/*! ./src/templates/index.js */ "./src/templates/index.js")))
+  "component---src-templates-index-js": hot(preferDefault(__webpack_require__(/*! ./src/templates/index.js */ "./src/templates/index.js"))),
+  "component---src-templates-post-js": hot(preferDefault(__webpack_require__(/*! ./src/templates/post.js */ "./src/templates/post.js")))
   }
 
 
@@ -38287,9 +38288,11 @@ function Activity(_ref) {
         }, "Commits:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
           className: "activity-payload-commits"
         }, activity.payload.commits.map(function (_ref2) {
-          var message = _ref2.message;
+          var message = _ref2.message,
+              sha = _ref2.sha;
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-            className: "activity-payload-commits-item"
+            className: "activity-payload-commits-item",
+            key: sha
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "activity-payload-commits-item-icon"
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_1__["FaChevronRight"], null)), message);
@@ -38472,6 +38475,17 @@ var NotFoundPage = function NotFoundPage() {
 
 /***/ }),
 
+/***/ "./src/styles/post.css":
+/*!*****************************!*\
+  !*** ./src/styles/post.css ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/styles/skill.css":
 /*!******************************!*\
   !*** ./src/styles/skill.css ***!
@@ -38516,7 +38530,7 @@ var IndexPage = function IndexPage(_ref) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_Skill__WEBPACK_IMPORTED_MODULE_3__["default"], {
       key: i
     }, skill);
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "My latest activity on GitHub"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, activities.map(function (activity, i) {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "My latest activity on GitHub"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, activities.map(function (activity) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_Activity__WEBPACK_IMPORTED_MODULE_2__["default"], {
       activity: activity,
       key: activity.id
@@ -38525,6 +38539,38 @@ var IndexPage = function IndexPage(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (IndexPage);
+
+/***/ }),
+
+/***/ "./src/templates/post.js":
+/*!*******************************!*\
+  !*** ./src/templates/post.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Post; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_post_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/post.css */ "./src/styles/post.css");
+/* harmony import */ var _styles_post_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_post_css__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function Post(_ref) {
+  var node = _ref.pageContext.node;
+  var html = {
+    __html: node.html
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
+    className: "post"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, node.frontmatter.title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "post-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    dangerouslySetInnerHTML: html
+  })));
+}
 
 /***/ }),
 

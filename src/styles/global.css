@@ -5,13 +5,34 @@
   src: url("iosevka-sparkle-regular.woff") format("woff");
 }
 
-h1,
+@font-face {
+  font-family: "Iosevka-Paragraph";
+  src: url("iosevka-ss03-regular.woff") format("woff");
+}
+
+h1 {
+  color: var(--color-text-header1);
+}
+
 h2,
 h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text-header2);
+}
+
+p,
+tr,
 li {
   color: var(--color-text-primary);
 }
 
+code {
+  color: var(--color-text-primary);
+}
+
+body,
 ul,
 blockquote {
   margin: 0rem;
@@ -25,8 +46,7 @@ ul {
 li {
   margin: 1rem 0;
 }
-
-html {
+x html {
   width: 100%;
   height: 100%;
 }
@@ -73,12 +93,12 @@ body {
     padding: 0rem 1rem;
     margin-left: 2.5rem;
     border-left: 2px solid;
-    border-color: var(--color-text-disabled);
+    border-color: var(--color-text-primary);
   }
 
   blockquote > i {
     line-height: 1.6;
-    color: var(--color-text-tertiary);
+    color: var(--color-text-primary);
   }
 }
 
@@ -97,6 +117,16 @@ body {
   }
 }
 
+hr {
+  margin: 1rem 0px;
+}
+
 section {
   padding: 0rem 0rem 1rem 0rem;
 }
+/*
+#___gatsby,
+#___gatsby > div {
+  width: 100%;
+  height: 100%;
+} */

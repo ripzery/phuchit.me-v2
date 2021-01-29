@@ -15,7 +15,47 @@ function getActivities() {
     })))
 }
 
-exports.createPages = async({ actions: { createPage } }) => {
+async function getMarkdown(graphql, reporter) {
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: {order: DESC, fields: [frontmatter___date]}
+        limit: 100
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
+              date
+              title
+            }
+            html
+          }
+        }
+      }
+    }
+  `)
+
+  if(result.errors) {
+    reporter.panicOnBuild(`Error while running graphql query`, result.errors)
+    return
+  }
+
+  return result.data.allMarkdownRemark.edges
+}
+
+exports.createPages = async({ actions: { createPage }, graphql, reporter }) => {
+
+  const markdowns = await getMarkdown(graphql, reporter)
+  markdowns.forEach(({ node }) => {
+    console.log(node)
+    createPage({
+      path: node.frontmatter.slug,
+      component: require.resolve('./src/templates/post.js'),
+      context: { node }
+    })
+  })
+
   return getActivities()
     .then(activities => {
       createPage({

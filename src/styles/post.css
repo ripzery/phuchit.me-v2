@@ -1,0 +1,122 @@
+@import "./constants.css";
+
+.post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.post > header {
+  display: flex;
+  align-items: center;
+}
+
+.post > header > h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 360px) {
+  .post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-content > div {
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
+  }
+
+  .post-content > div > h2 {
+    color: var(--color-text-secondary);
+  }
+
+  .post-content > div > h3 {
+    color: var(--color-text-tertiary);
+  }
+
+  .post-content > div > p {
+    font-size: 1rem;
+    color: var(--color-text-post);
+    line-height: 1.8;
+    text-rendering: optimizeLegibility;
+  }
+
+  .post-content > * pre {
+    background-color: var(--color-codeblock);
+    border-radius: 0.25rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0px;
+    padding: 1rem;
+  }
+
+  .post-content > * pre code {
+    max-width: 100%;
+  }
+
+  .post-content > * blockquote {
+    color: var(--color-text-blockquote);
+    background-color: var(--color-codeblock);
+    padding: 0.5rem;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .post-content > * blockquote p {
+    line-height: 1.6;
+  }
+
+  .post-content > * a {
+    color: var(--color-text-accent);
+  }
+
+  .post-content > * li {
+    list-style-type: disc;
+    line-height: 1.6;
+    color: var(--color-text-post);
+  }
+
+  .post-content > * img {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .post-content > div {
+    max-width: 480px;
+    padding: 0rem 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .post-content {
+    width: 600px;
+    align-items: flex-start;
+  }
+
+  .post-content > * img {
+    max-width: 45%;
+    height: auto;
+  }
+
+  .post-content > div {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post-content {
+    width: 768px;
+  }
+}

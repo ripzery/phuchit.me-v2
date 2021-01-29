@@ -25,9 +25,9 @@ function Activity({ activity }) {
             <p className='activity-payload-header'>Commits:
             </p>
             <ul className='activity-payload-commits'>
-              {activity.payload.commits.map(({ message }) => {
+              {activity.payload.commits.map(({ message, sha }) => {
               return (
-                <li className='activity-payload-commits-item'>
+                <li className='activity-payload-commits-item' key={sha}>
                   <div className='activity-payload-commits-item-icon'><FaChevronRight /></div>
                   {message}
                 </li>
