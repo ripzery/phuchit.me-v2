@@ -1,20 +1,19 @@
 import React from 'react'
 import "../styles/post.css"
+import { MDXProvider } from "@mdx-js/react"
 
 export default function Post({
-  pageContext: { node }
+  children,
+  pageContext
 }) {
-  const html = {
-    __html: node.html
-  }
-
+  console.log(pageContext)
   return (
     <article className='post'>
       <header>
-        <h1>{node.frontmatter.title}</h1>
+        {/* <h1>{node.frontmatter.title}</h1> */}
       </header>
       <div className='post-content'>
-        <div dangerouslySetInnerHTML={html} />
+        <MDXProvider>{children}</MDXProvider>
       </div>
     </article>
   )
