@@ -27,6 +27,10 @@
     padding: 0rem 1rem;
   }
 
+  .post-content > ul {
+    width: 100%;
+  }
+
   .post-content > h2 {
     color: var(--color-text-secondary);
   }
@@ -53,15 +57,25 @@
     padding: 1rem;
   }
 
+  .code {
+    width: 100%;
+  }
+
   .post-content pre code {
+    width: 100%;
     max-width: 100%;
+  }
+
+  .post-content div {
+    width: 100%;
   }
 
   .post-content blockquote {
     color: var(--color-text-blockquote);
     background-color: var(--color-codeblock);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     margin-left: 0;
+    width: 100%;
     max-width: 100%;
   }
 

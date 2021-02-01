@@ -4,6 +4,9 @@ date: "2019-05-04"
 title: "My first blog post"
 ---
 
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
 # Markdown: Syntax
 
 - [Markdown: Syntax](#markdown-syntax)
@@ -99,6 +102,13 @@ adding additional levels of `>`:
 > > This is nested blockquote.
 >
 > Back to the first level.
+
+```js
+import React from 'react'
+import Example from './place'
+
+export default () => <Example />
+```
 
 Blockquotes can contain other Markdown elements, including headers, lists,
 and code blocks:
@@ -253,9 +263,6 @@ easy to include example HTML source code using Markdown -- just paste
 it and indent it, and Markdown will handle the hassle of encoding the
 ampersands and angle brackets. For example, this:
 
-    <div class="footer">
-        &copy; 2004 Foo Corporation
-    </div>
 
 Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means
