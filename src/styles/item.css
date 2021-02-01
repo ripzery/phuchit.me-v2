@@ -12,3 +12,13 @@
 .item > a {
   color: var(--color-text-primary);
 }
+
+.item > span::before {
+  content: '-';
+  margin-right: 0.5rem;
+}
+
+.item > span {
+  color: var(--color-text-disabled);
+  margin-left: 0.5rem;
+}
