@@ -1,11 +1,12 @@
 import * as React from "react"
 import "../styles/global.css"
 import Activity from "../components/Activity"
-import Skill from '../components/Skill'
+import Item from '../components/Item'
 import Footer from "../components/Footer"
 import { skills, name, introduction } from '../../public/static/self.json'
+import { Link } from "gatsby"
 
-const IndexPage = ({ pageContext: { activities }}) => {
+const IndexPage = ({ pageContext: { activities, posts }}) => {
   return (
     <div className='container'>
       <section>
@@ -21,7 +22,13 @@ const IndexPage = ({ pageContext: { activities }}) => {
           My Interests
         </h1>
         <ul>
-          {skills.map((skill, i) => <Skill key={i}>{skill}</Skill>)}
+          {skills.map((skill, i) => <Item key={i}>{skill}</Item>)}
+        </ul>
+      </section>
+      <section>
+        <h1>Posts</h1>
+        <ul>
+          {posts.map(({slug, title}) => <Item key={slug}><Link to={slug}>{title}</Link></Item>)}
         </ul>
       </section>
       <section>

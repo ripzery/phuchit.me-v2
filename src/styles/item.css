@@ -1,10 +1,14 @@
-.skill {
+.item {
   line-height: 1.6rem;
   display: flex;
 }
 
-.skill-icon {
+.item-icon {
   margin-right: 1rem;
   display: flex;
   align-items: center;
+}
+
+.item > a {
+  color: var(--color-text-primary);
 }

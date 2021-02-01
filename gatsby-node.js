@@ -1,9 +1,10 @@
 const axios = require('axios')
 const path = require('path')
 const moment = require('moment')
+const { get } = require('http')
 
 function getActivities() {
- return axios.get("https://api.github.com/users/ripzery/events/public")
+  return axios.get("https://api.github.com/users/ripzery/events/public")
     .then((resp) => resp.data)
     .then(resp => resp.slice(0, 5))
     .then(data => data.map(activity => ({
@@ -15,7 +16,7 @@ function getActivities() {
     })))
 }
 
-async function getMarkdown(graphql, reporter) {
+async function getPosts(graphql, reporter) {
   const result = await graphql(`
     {
       allMdx(
@@ -26,33 +27,32 @@ async function getMarkdown(graphql, reporter) {
           node {
             frontmatter {
               slug
-              date
               title
             }
-            children
           }
         }
       }
     }
   `)
 
-  if(result.errors) {
+  if (result.errors) {
     reporter.panicOnBuild(`Error while running graphql query`, result.errors)
     return
   }
 
-  console.log(result.data)
-
-  return result.data.allMdx.edges
+  return result.data.allMdx.edges.map(edge => ({ slug: edge.node.frontmatter.slug, title: edge.node.frontmatter.title }))
 }
 
-exports.createPages = async({ actions: { createPage }, graphql, reporter }) => {
+exports.createPages = async ({ actions: { createPage }, graphql, reporter }) => {
+  const posts = await getPosts(graphql, reporter)
+  console.log(posts)
+
   return getActivities()
     .then(activities => {
       createPage({
         path: '/',
         component: path.resolve('./src/templates/index.js'),
-        context: { activities }
+        context: { activities, posts }
       })
     })
 }

@@ -4,11 +4,9 @@ import Highlight, { defaultProps } from 'prism-react-renderer'
 export default ({ children, className }) => {
     const language = className ? className.replace(/language-/, '') : null
 
-    console.log(language, className)
-
     if(!language) {
         return (
-            <div style={{ color: 'tomato' }}>{children}</div>
+            <div className='post-code'>{children}</div>
         )
     }
 
