@@ -11,6 +11,8 @@ const components = {
 }
 
 function formatDate(date) {
+  if(!date) return
+  
   const months = ['Jan', "Feb", "Mar", "Apr", "May", "Jun", "Jul", 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
   const [year, month, day] = date.split('-')
   const mon = months[parseInt(month) - 1]
@@ -22,6 +24,8 @@ export default function Post({
   children,
   pageContext
 }) {
+
+  console.log(pageContext.frontmatter)
 
   return (
     <article className='post'>
