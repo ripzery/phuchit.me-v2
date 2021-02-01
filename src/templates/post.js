@@ -25,8 +25,6 @@ export default function Post({
   pageContext
 }) {
 
-  console.log(pageContext.frontmatter)
-
   return (
     <article className='post'>
       <header>
