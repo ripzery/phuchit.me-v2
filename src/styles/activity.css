@@ -31,11 +31,6 @@
   padding-bottom: 2rem;
 }
 
-.activity-icon {
-  margin-top: 0.5rem;
-  color: var(--color-text-accent);
-}
-
 .activity-time {
   margin: 0;
   background-color: var(--color-text-accent);
@@ -61,8 +56,9 @@
   margin: 0px;
   padding: 0rem 1rem;
   border-radius: 0.25rem;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
+  flex-direction: column;
   background-color: var(--color-button);
 }
 
@@ -75,4 +71,40 @@
 .activity-payload-commits-item-icon {
   display: inline;
   margin-right: 1rem;
+}
+
+@media screen and (min-width: 360px) {
+  .activity-icon {
+    margin-top: 0.5rem;
+    color: var(--color-text-accent);
+    font-size: 0.5rem;
+  }
+
+  .activity-time {
+    margin: 0;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }  
+
+  .activity-payload-commits {
+    margin: 0px;
+    padding: 0rem 0.8rem;
+    border-radius: 0.25rem;
+  }
+
+  .activity-payload-commits-item {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+  }
+
+  .activity-right {
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .activity-icon {
+    font-size: 1rem;
+  }
 }

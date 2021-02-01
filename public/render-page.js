@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/@reach/router/index.js"), require("fs"), require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/concat.js"), require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/flatten.js"), require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/get.js"), require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/isObject.js"), require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/merge.js"), require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/uniqBy.js"), require("path"), require("react"), require("react-dom/server"));
+		module.exports = factory(require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/@reach/router/index.js"), require("fs"), require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/concat.js"), require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/flatten.js"), require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/get.js"), require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/isObject.js"), require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/merge.js"), require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/uniqBy.js"), require("path"), require("react"), require("react-dom/server"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/@reach/router/index.js", "fs", "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/concat.js", "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/flatten.js", "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/get.js", "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/isObject.js", "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/merge.js", "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/uniqBy.js", "path", "react", "react-dom/server"], factory);
+		define("lib", ["/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/@reach/router/index.js", "fs", "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/concat.js", "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/flatten.js", "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/get.js", "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/isObject.js", "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/merge.js", "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/uniqBy.js", "path", "react", "react-dom/server"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/@reach/router/index.js"), require("fs"), require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/concat.js"), require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/flatten.js"), require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/get.js"), require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/isObject.js"), require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/merge.js"), require("/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/uniqBy.js"), require("path"), require("react"), require("react-dom/server"));
+		exports["lib"] = factory(require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/@reach/router/index.js"), require("fs"), require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/concat.js"), require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/flatten.js"), require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/get.js"), require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/isObject.js"), require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/merge.js"), require("/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/uniqBy.js"), require("path"), require("react"), require("react-dom/server"));
 	else
-		root["lib"] = factory(root["/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/@reach/router/index.js"], root["fs"], root["/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/concat.js"], root["/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/flatten.js"], root["/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/get.js"], root["/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/isObject.js"], root["/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/merge.js"], root["/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/uniqBy.js"], root["path"], root["react"], root["react-dom/server"]);
+		root["lib"] = factory(root["/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/@reach/router/index.js"], root["fs"], root["/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/concat.js"], root["/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/flatten.js"], root["/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/get.js"], root["/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/isObject.js"], root["/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/merge.js"], root["/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/uniqBy.js"], root["path"], root["react"], root["react-dom/server"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash_concat__, __WEBPACK_EXTERNAL_MODULE_lodash_flatten__, __WEBPACK_EXTERNAL_MODULE_lodash_get__, __WEBPACK_EXTERNAL_MODULE_lodash_isObject__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_lodash_uniqBy__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -111,8 +111,7 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
-  "component---src-templates-index-js": hot(preferDefault(__webpack_require__(/*! ./src/templates/index.js */ "./src/templates/index.js"))),
-  "component---src-templates-post-js": hot(preferDefault(__webpack_require__(/*! ./src/templates/post.js */ "./src/templates/post.js")))
+  "component---src-templates-index-js": hot(preferDefault(__webpack_require__(/*! ./src/templates/index.js */ "./src/templates/index.js")))
   }
 
 
@@ -38475,17 +38474,6 @@ var NotFoundPage = function NotFoundPage() {
 
 /***/ }),
 
-/***/ "./src/styles/post.css":
-/*!*****************************!*\
-  !*** ./src/styles/post.css ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ "./src/styles/skill.css":
 /*!******************************!*\
   !*** ./src/styles/skill.css ***!
@@ -38542,41 +38530,9 @@ var IndexPage = function IndexPage(_ref) {
 
 /***/ }),
 
-/***/ "./src/templates/post.js":
-/*!*******************************!*\
-  !*** ./src/templates/post.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Post; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_post_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/post.css */ "./src/styles/post.css");
-/* harmony import */ var _styles_post_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_post_css__WEBPACK_IMPORTED_MODULE_1__);
-
-
-function Post(_ref) {
-  var node = _ref.pageContext.node;
-  var html = {
-    __html: node.html
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
-    className: "post"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, node.frontmatter.title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "post-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    dangerouslySetInnerHTML: html
-  })));
-}
-
-/***/ }),
-
 /***/ "@reach/router":
 /*!***************************************************************************************************!*\
-  !*** external "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/@reach/router/index.js" ***!
+  !*** external "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/@reach/router/index.js" ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -38598,7 +38554,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_fs__;
 
 /***/ "lodash/concat":
 /*!*********************************************************************************************!*\
-  !*** external "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/concat.js" ***!
+  !*** external "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/concat.js" ***!
   \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -38609,7 +38565,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_concat__;
 
 /***/ "lodash/flatten":
 /*!**********************************************************************************************!*\
-  !*** external "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/flatten.js" ***!
+  !*** external "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/flatten.js" ***!
   \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -38620,7 +38576,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_flatten__;
 
 /***/ "lodash/get":
 /*!******************************************************************************************!*\
-  !*** external "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/get.js" ***!
+  !*** external "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/get.js" ***!
   \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -38631,7 +38587,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_get__;
 
 /***/ "lodash/isObject":
 /*!***********************************************************************************************!*\
-  !*** external "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/isObject.js" ***!
+  !*** external "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/isObject.js" ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -38642,7 +38598,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_isObject__;
 
 /***/ "lodash/merge":
 /*!********************************************************************************************!*\
-  !*** external "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/merge.js" ***!
+  !*** external "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/merge.js" ***!
   \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -38653,7 +38609,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_merge__;
 
 /***/ "lodash/uniqBy":
 /*!*********************************************************************************************!*\
-  !*** external "/Users/rpzr/workspace/personal/phuchit.me-v2/node_modules/lodash/uniqBy.js" ***!
+  !*** external "/Users/rpzy/workspace/personal/phuchit.me-v2/node_modules/lodash/uniqBy.js" ***!
   \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {

@@ -46,6 +46,7 @@ ul {
 li {
   margin: 1rem 0;
 }
+
 x html {
   width: 100%;
   height: 100%;
@@ -68,15 +69,24 @@ body {
   align-items: center;
 }
 
+blockquote {
+  border-left: 2px solid;
+  border-color: var(--color-text-primary);
+}
+
+blockquote > i {
+  color: var(--color-text-primary);
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 360px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .container {
@@ -85,20 +95,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
+  }
+
+  ul {
+    padding-left: 0rem;
   }
 
   blockquote {
-    border-left: 2px solid;
     padding: 0rem 1rem;
-    margin-left: 2.5rem;
-    border-left: 2px solid;
-    border-color: var(--color-text-primary);
   }
 
   blockquote > i {
     line-height: 1.6;
-    color: var(--color-text-primary);
+  }
+
+  li {
+    margin-top: 1rem;
   }
 }
 
@@ -108,7 +121,7 @@ body {
   }
 
   .container {
-    width: 960px;
+    width: 640px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -117,12 +130,19 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+}
+
 hr {
   margin: 1rem 0px;
 }
 
 section {
-  padding: 0rem 0rem 1rem 0rem;
+  margin-top: 1rem;
+  padding: 0rem 0rem 0rem 0rem;
 }
 /*
 #___gatsby,
