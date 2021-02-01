@@ -7,6 +7,8 @@ import { skills, name, introduction } from '../../public/static/self.json'
 import { Link } from "gatsby"
 
 const IndexPage = ({ pageContext: { activities, posts }}) => {
+  const recentPosts = posts.slice(0, 5)
+
   return (
     <div className='container'>
       <section>
@@ -28,7 +30,7 @@ const IndexPage = ({ pageContext: { activities, posts }}) => {
       <section>
         <h1>Posts</h1>
         <ul>
-          {posts.map(({slug, title}) => <Item key={slug}><Link to={slug}>{title}</Link></Item>)}
+          {recentPosts.map(({slug, title}) => <Item key={slug}><Link to={slug}>{title}</Link></Item>)}
         </ul>
       </section>
       <section>

@@ -45,14 +45,22 @@ async function getPosts(graphql, reporter) {
 
 exports.createPages = async ({ actions: { createPage }, graphql, reporter }) => {
   const posts = await getPosts(graphql, reporter)
-  console.log(posts)
 
   return getActivities()
     .then(activities => {
+      // Create index page
       createPage({
         path: '/',
         component: path.resolve('./src/templates/index.js'),
         context: { activities, posts }
+      })
+
+      // Create /posts page
+
+      createPage({
+        path: '/posts',
+        component: path.resolve('./src/templates/posts.js'),
+        context: {posts}
       })
     })
 }

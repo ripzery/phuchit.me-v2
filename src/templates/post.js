@@ -15,10 +15,6 @@ export default function Post({
   pageContext
 }) {
 
-  console.log(pageContext)
-
-  console.log(pageContext.frontmatter.slug)
-
   return (
     <article className='post'>
       <header>
