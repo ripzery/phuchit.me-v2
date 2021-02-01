@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy:surge": "rm -r .cache && gatsby build && cp public/index.html public/200.html && cp CNAME public && surge public"
+    "deploy:surge": "rm -rf .cache && gatsby build && cp public/index.html public/200.html && cp CNAME public && surge public"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
