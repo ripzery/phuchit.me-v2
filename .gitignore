@@ -1,4 +1,5 @@
 node_modules
 .cache/*
-public/page-data
+public/page-data.json
+public/render-page.js
 public/*.map
