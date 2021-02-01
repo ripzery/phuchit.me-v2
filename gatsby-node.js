@@ -27,7 +27,7 @@ async function getPosts(graphql, reporter) {
           node {
             frontmatter {
               slug
-              date(formatString: "LL")
+              date(formatString: "MMM DD, YYYY")
               title
             }
           }
