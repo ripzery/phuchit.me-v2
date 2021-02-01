@@ -30,7 +30,7 @@ const IndexPage = ({ pageContext: { activities, posts }}) => {
       <section>
         <h1>Posts</h1>
         <ul>
-          {recentPosts.map(({slug, title}) => <Item key={slug}><Link to={slug}>{title}</Link></Item>)}
+          {recentPosts.map(({slug, title, date}) => <Item key={slug}><Link to={slug}>{title}</Link></Item>)}
         </ul>
       </section>
       <section>

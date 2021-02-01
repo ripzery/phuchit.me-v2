@@ -10,6 +10,14 @@ const components = {
   code: CodeBlock
 }
 
+function formatDate(date) {
+  const months = ['Jan', "Feb", "Mar", "Apr", "May", "Jun", "Jul", 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+  const [year, month, day] = date.split('-')
+  const mon = months[parseInt(month) - 1]
+  
+  return `${mon} ${day}, ${year}`
+}
+
 export default function Post({
   children,
   pageContext
@@ -25,7 +33,7 @@ export default function Post({
           <VscChevronRight />
           <Link to={pageContext.frontmatter.slug}>{pageContext.frontmatter.title}</Link>
         </div>
-        <p className='post-date'>Published at: {pageContext.frontmatter.date}</p>
+        <p className='post-date'>Published at: {formatDate(pageContext.frontmatter.date)}</p>
         <h1>{pageContext.frontmatter.title}</h1>
       </header>
       <div className='post-content'>

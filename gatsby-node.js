@@ -28,6 +28,7 @@ async function getPosts(graphql, reporter) {
             frontmatter {
               slug
               title
+              date(formatString: "LL")
             }
           }
         }
@@ -40,7 +41,7 @@ async function getPosts(graphql, reporter) {
     return
   }
 
-  return result.data.allMdx.edges.map(edge => ({ slug: edge.node.frontmatter.slug, title: edge.node.frontmatter.title }))
+  return result.data.allMdx.edges.map(edge => ({ slug: edge.node.frontmatter.slug, title: edge.node.frontmatter.title, date: edge.node.frontmatter.date }))
 }
 
 exports.createPages = async ({ actions: { createPage }, graphql, reporter }) => {
@@ -60,7 +61,7 @@ exports.createPages = async ({ actions: { createPage }, graphql, reporter }) => 
       createPage({
         path: '/posts',
         component: path.resolve('./src/templates/posts.js'),
-        context: {posts}
+        context: { posts }
       })
     })
 }

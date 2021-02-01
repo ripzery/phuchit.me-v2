@@ -16,7 +16,7 @@ export default ({ pageContext: { posts } }) => {
             <section>
                 <h1>Posts</h1>
                 <ul>
-                    {posts.map(({ slug, title }) => <Item key={slug}><Link to={slug}>{title}</Link></Item>)}
+                    {posts.map(({ slug, title, date }) => <Item key={slug}><Link to={slug}>{title}</Link></Item>)}
                 </ul>
             </section>
         </div>
