@@ -47,17 +47,6 @@ async function getMarkdown(graphql, reporter) {
 }
 
 exports.createPages = async({ actions: { createPage }, graphql, reporter }) => {
-
-  const markdowns = await getMarkdown(graphql, reporter)
-  markdowns.forEach(({ node }) => {
-    console.log(node)
-    createPage({
-      path: node.frontmatter.slug,
-      component: require.resolve('./src/templates/post.js'),
-      context: { node }
-    })
-  })
-
   return getActivities()
     .then(activities => {
       createPage({
