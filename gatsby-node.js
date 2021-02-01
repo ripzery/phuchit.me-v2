@@ -18,7 +18,7 @@ function getActivities() {
 async function getMarkdown(graphql, reporter) {
   const result = await graphql(`
     {
-      allMarkdownRemark(
+      allMdx(
         sort: {order: DESC, fields: [frontmatter___date]}
         limit: 100
       ) {
@@ -29,7 +29,7 @@ async function getMarkdown(graphql, reporter) {
               date
               title
             }
-            html
+            children
           }
         }
       }
@@ -41,7 +41,9 @@ async function getMarkdown(graphql, reporter) {
     return
   }
 
-  return result.data.allMarkdownRemark.edges
+  console.log(result.data)
+
+  return result.data.allMdx.edges
 }
 
 exports.createPages = async({ actions: { createPage }, graphql, reporter }) => {

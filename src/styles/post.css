@@ -23,31 +23,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .post-content > div {
     max-width: 340px;
-    display: flex;
-    flex-direction: column;
     padding: 0rem 1rem;
   }
 
-  .post-content > div > h2 {
+  .post-content > h2 {
     color: var(--color-text-secondary);
   }
 
-  .post-content > div > h3 {
+  .post-content > h3 {
     color: var(--color-text-tertiary);
   }
 
-  .post-content > div > p {
+  .post-content > p {
     font-size: 1rem;
     color: var(--color-text-post);
     line-height: 1.8;
     text-rendering: optimizeLegibility;
   }
 
-  .post-content > * pre {
+  .post-content pre {
     background-color: var(--color-codeblock);
     border-radius: 0.25rem;
     line-height: 1.6;
@@ -58,11 +53,11 @@
     padding: 1rem;
   }
 
-  .post-content > * pre code {
+  .post-content pre code {
     max-width: 100%;
   }
 
-  .post-content > * blockquote {
+  .post-content blockquote {
     color: var(--color-text-blockquote);
     background-color: var(--color-codeblock);
     padding: 0.5rem;
@@ -70,21 +65,25 @@
     max-width: 100%;
   }
 
-  .post-content > * blockquote p {
+  .post-content blockquote p {
     line-height: 1.6;
   }
 
-  .post-content > * a {
+  .post-content ol {
+    margin: 0;
+  }
+
+  .post-content a {
     color: var(--color-text-accent);
   }
 
-  .post-content > * li {
+  .post-content li {
     list-style-type: disc;
     line-height: 1.6;
     color: var(--color-text-post);
   }
 
-  .post-content > * img {
+  .post-content img {
     max-width: 100%;
     height: auto;
     align-self: center;
@@ -93,7 +92,7 @@
 }
 
 @media screen and (min-width: 480px) {
-  .post-content > div {
+  .post-content {
     max-width: 480px;
     padding: 0rem 2rem;
   }
@@ -101,11 +100,11 @@
 
 @media screen and (min-width: 768px) {
   .post-content {
-    width: 600px;
+    max-width: 600px;
     align-items: flex-start;
   }
 
-  .post-content > * img {
+  .post-content img {
     max-width: 45%;
     height: auto;
   }
@@ -117,6 +116,6 @@
 
 @media screen and (min-width: 1024px) {
   .post-content {
-    width: 768px;
+    max-width: 768px;
   }
 }
